@@ -1,0 +1,64 @@
+/**
+ * general base styling
+ **/
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/**
+ * base text styling
+ **/
+
+a {
+  text-decoration: none;
+  color: #aa55e7;
+  border-bottom: 1px solid #aa55e7;
+}
+
+a:hover {
+  background: rgba(170, 85, 231, 0.15);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", sans-serif;
+}
+
+/**
+ * layout styles 
+ **/
+
+.row {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/**
+ author tile styling
+ **/
+
+.author-tile {
+  display: flex;
+}
+
+.author-tile img {
+  border-radius: 50%;
+  height: 3.5rem;
+  align-self: center;
+  margin: 0.75rem;
+  box-shadow: 0 0 2px rgba(170, 85, 231, 0.25);
+}
+
+.author-tile .text {
+  align-self: center;
+}
+
+.author-tile .text p {
+  margin: 0.15rem;
+}
