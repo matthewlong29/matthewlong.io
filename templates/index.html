@@ -1,4 +1,7 @@
 {% extends "layout.html" %}
+{% from "macros.html" import authorTile %}
+
 {% block content %}
+  {{ authorTile() }}
   <h2>Yay it works!</h2>
 {% endblock %}
