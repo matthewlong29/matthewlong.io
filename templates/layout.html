@@ -22,12 +22,16 @@
         </ul>
         {% endif %}
       {% endwith %}
+    </div>
+    <div class="page-content row">
       {% block content %}
       {% endblock %}
     </div>
-    <footer class="row">
-      <span>2018, <a href="/">Matthew Long</a>.</span>
-      <span><a href="/login">Temp Admin Link.</a></span>
+    <footer>
+      <div class="row">
+        <span>2018, <a href="/">Matthew Long</a>.</span>
+        <span><a href="/login">Sign In.</a></span>
+      </div>
     </footer>
   </body>
 </html>

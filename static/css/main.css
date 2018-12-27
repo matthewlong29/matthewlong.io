@@ -7,6 +7,11 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+footer {
+  margin-top: auto;
+  margin-bottom: 1rem;
+}
+
 ::selection {
   background: rgba(170, 85, 231, 0.1);
 }
@@ -21,7 +26,7 @@ body {
 a {
   text-decoration: none;
   color: #aa55e7;
-  border-bottom: 1px solid #aa55e7;
+  border-bottom: 1px solid black;
 }
 
 a:hover {
@@ -68,4 +73,50 @@ h6 {
 
 .author-tile .text p {
   margin: 0.15rem;
+}
+
+/**
+ login and form styling
+ **/
+
+.login-container {
+  display: flex;
+  margin: auto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  height: 400px;
+  width: 600px;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.login-form {
+  margin: 2rem 1rem 1rem 1rem;
+}
+
+.login-form h4 {
+  color: #aa55e7;
+}
+
+.login-form form {
+  width: 250px;
+}
+
+form .field input {
+  width: 100%;
+  padding: 0;
+  margin: 0.5rem 0;
+  border: none;
+  border-bottom: 1px solid #aa55e7;
+}
+
+form button {
+  background: white;
+  border: 1px solid #aa55e7;
+  border-radius: 20px;
+  color: #aa55e7;
+  margin: 1rem 0;
+}
+
+.login-container .login-graphic img {
+  width: 365px;
 }
