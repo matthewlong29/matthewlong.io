@@ -11,6 +11,10 @@ Personal blog and showcase belonging to matthew long.
 - pip install peewee
 - pip install flask-wtf
 
-## Development Environment
+## Run The Application (in powershell)
 
-- python app.py
+- $env:FLASK_APP = "blog"
+- $env:FLASK_ENV = "development"
+- flask run
+
+Need to modify the above to run the application in other terminals.
