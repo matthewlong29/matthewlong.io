@@ -13,8 +13,12 @@ Personal blog and showcase belonging to matthew long.
 
 ## Run The Application (in powershell)
 
-- $env:FLASK_APP = "blog"
-- $env:FLASK_ENV = "development"
+- \$env:FLASK_APP = "blog"
+- \$env:FLASK_ENV = "development"
+- flask init-db
 - flask run
 
 Need to modify the above to run the application in other terminals.
+
+### Initialize the Database File
+
