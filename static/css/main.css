@@ -7,6 +7,13 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+::selection {
+  background: rgba(170, 85, 231, 0.1);
+}
+::-moz-selection {
+  background: rgba(170, 85, 231, 0.1);
+}
+
 /**
  * base text styling
  **/
