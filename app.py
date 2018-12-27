@@ -57,22 +57,8 @@ def game():
     return render_template("game.html")
 
 
-@app.route("/register", methods=("GET", "POST"))
-def register():
-    form = forms.RegisterForm()
-    if form.validate_on_submit():
-        flash("Yay, you registered!", "success")
-        models.User.create_user(
-            username=form.username.data,
-            email=form.email.data,
-            password=form.password.data
-        )
-        return redirect(url_for("index"))
-    return render_template("register.html", form=form)
-
-
-@app.route("/login", methods=("GET", "POST"))
-def login():
+@app.route("/signin", methods=("GET", "POST"))
+def signin():
     form = forms.LoginForm()
     if form.validate_on_submit():
         try:
@@ -82,11 +68,11 @@ def login():
         else:
             if check_password_hash(user.password, form.password.data):
                 login_user(user)
-                flash("You've been logged in!", "success")
+                flash("You've been signed in!", "success")
                 return redirect(url_for("index"))
             else:
                 flash("Your email or password doesn't match!", "error")
-    return render_template("login.html", form=form)
+    return render_template("signin.html", form=form)
 
 
 @app.route("/")
@@ -98,9 +84,9 @@ if __name__ == "__main__":
     models.initialize()
     try:
         models.User.create_user(
-            username="MatthewLong29",
-            email="long.matthew29@gmail.com",
-            password="password",
+            username="m",
+            email="m@gmail.com",
+            password="m",
             admin=True
         )
     except ValueError:

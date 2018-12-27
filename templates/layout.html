@@ -10,19 +10,8 @@
   </head>
   <body>
     <header class="row">
-      <h1>matthewlong.io</h1>
+      <h1><a href="/">matthewlong.io</a></h1>
     </header>
-    <div class="row">
-      {% with messages = get_flashed_messages() %}
-        {% if messages %}
-        <ul>
-          {% for message in messages %}
-            <li>{{ message }}</li>
-          {% endfor %}
-        </ul>
-        {% endif %}
-      {% endwith %}
-    </div>
     <div class="page-content row">
       {% block content %}
       {% endblock %}
@@ -30,7 +19,7 @@
     <footer>
       <div class="row">
         <span>2018, <a href="/">Matthew Long</a>.</span>
-        <span><a href="/login">Sign In.</a></span>
+        <span><a href="/signin">Sign In.</a></span>
       </div>
     </footer>
   </body>

@@ -12,6 +12,15 @@ footer {
   margin-bottom: 1rem;
 }
 
+header h1 a {
+  color: black;
+  border-bottom: none; 
+}
+
+header a h1:hover {
+  background: rgba(170, 85, 231, 0.15);
+}
+
 ::selection {
   background: rgba(170, 85, 231, 0.1);
 }
@@ -76,11 +85,10 @@ h6 {
 }
 
 /**
- login and form styling
+ signin and form styling
  **/
 
-.login-container {
-  display: flex;
+.signin-container {
   margin: auto;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
   height: 400px;
@@ -89,15 +97,46 @@ h6 {
   border-radius: 2px;
 }
 
-.login-form {
+.form-messages {
+  height: 51px;
+}
+
+.form-messages ul {
+  padding: 0;
+  margin: 0;
+}
+
+.form-messages ul li {
+  list-style-type: none;
+  background: rgba(170, 85, 231, 0.25);
+  padding: 1rem;
+}
+
+.form-messages ul li.error {
+  background: rgba(197, 52, 47, 0.25);
+}
+
+.form-messages ul li.success {
+  background: rgba(32, 168, 43, 0.25);
+}
+
+.form-messages ul li {
+  list-style-type: none;
+}
+
+.signin-content-container {
+  display: flex;
+}
+
+.signin-form {
   margin: 2rem 1rem 1rem 1rem;
 }
 
-.login-form h4 {
+.signin-form h4 {
   color: #aa55e7;
 }
 
-.login-form form {
+.signin-form form {
   width: 250px;
 }
 
@@ -117,6 +156,6 @@ form button {
   margin: 1rem 0;
 }
 
-.login-container .login-graphic img {
+.signin-container .signin-graphic img {
   width: 365px;
 }
