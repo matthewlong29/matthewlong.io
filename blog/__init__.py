@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask
+from flask import Flask, render_template
 
 
 def create_app(test_config=None):
@@ -28,6 +28,26 @@ def create_app(test_config=None):
     def hello():
         """A single page that says hello..."""
         return "Hello, World!"
+
+    @app.route("/resume")
+    def resume():
+        """doc"""
+        return render_template("resume.html")
+
+    @app.route("/blog")
+    def blog():
+        """doc"""
+        return render_template("blog.html")
+
+    @app.route("/showcase")
+    def showcase():
+        """doc"""
+        return render_template("showcase.html")
+
+    @app.route("/game")
+    def game():
+        """doc"""
+        return render_template("game.html")
 
     # register the database commands
     from . import db
