@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}{% endblock %} | Matthew Long</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <header class="row">
+      <h1><a href="/">matthewlong.io</a></h1>
+    </header>
+    <section class="page-content row">
+      {% block content %}
+      {% endblock %}
+    </section>
+    <footer>
+      <div class="row">
+        <span>2018, <a href="/">Matthew Long</a>. #</span>
+        <span>
+          {% if g.user %}
+            <span>{{ g.user['username'] }}</span>
+            <a href="{{ url_for('auth.logout') }}">Log Out</a>
+          {% else %}
+            <a href="{{ url_for('auth.register') }}">Register</a>
+            <a href="{{ url_for('auth.login') }}">Log In</a>
+          {% endif %}
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>
