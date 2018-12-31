@@ -1,4 +1,5 @@
 {% extends 'layout.html' %}
+{% from "macros.html" import authorTile %}
 
 {% block header %}
   <h1>{% block title %}Posts{% endblock %}</h1>
@@ -8,6 +9,7 @@
 {% endblock %}
 
 {% block content %}
+  {{ authorTile() }}
   {% for post in posts %}
     <article class="post">
       <header>

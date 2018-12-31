@@ -1,10 +1,12 @@
 {% extends 'layout.html' %}
+{% from "macros.html" import authorTile %}
 
 {% block header %}
   <h1>{% block title %}Log In{% endblock %}</h1>
 {% endblock %}
 
 {% block content %}
+  {{ authorTile() }}
   <form method="post">
     <label for="username">Username</label>
     <input name="username" id="username" required>
