@@ -14,7 +14,7 @@ export class PolicyService {
   }
 
   public createPolicy(policy: Policy) {
-    return this.firestore.collection('policies').add(policy);
+    return this.firestore.collection('policies').add(Object.assign({}, policy));
   }
 
   public updatePolicy(policy: Policy) {

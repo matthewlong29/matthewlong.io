@@ -1,10 +1,10 @@
 export class Policy {
   id: string;
   policyNumber: string;
-  creationDate: Date;
-  effectiveDate: Date;
-  expireDate: Date;
+  creationDate: string;
+  effectiveDate: string;
+  expireDate: string;
   paymentOption: string;
-  policyAmount: number;
+  policyAmount: string;
   extraInfo: string;
 }
