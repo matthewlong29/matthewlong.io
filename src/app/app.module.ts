@@ -6,12 +6,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { environment } from 'src/environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './pages/home/home.component';
 import { PolicyListComponent } from './policy-list/policy-list.component';
+import { UsesComponent } from './pages/uses/uses.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PolicyListComponent
+    PolicyListComponent,
+    HomeComponent,
+    UsesComponent,
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebaseConfig),
