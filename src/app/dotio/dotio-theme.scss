@@ -42,3 +42,15 @@ li,
 span {
   font-family: 'Open Sans', sans-serif;
 }
+
+table,
+thead,
+th,
+tr,
+td {
+  color: $text;
+}
+
+label {
+  color: $text;
+}
