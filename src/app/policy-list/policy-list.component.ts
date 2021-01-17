@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { Policy } from 'src/app/policy.model';
-import { PolicyService } from 'src/app/policy.service';
+import { Policy } from './policy.model';
+import { PolicyService } from './policy.service';
 
 @Component({
   selector: 'app-policy-list',

@@ -1,12 +1,14 @@
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { DotioModule } from './app/dotio/dotio.module';
 
-import { AppModule } from './app/app.module';
-import { environment } from './environments/environment';
-
-if (environment.production) {
-  enableProdMode();
-}
-
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+enableProdMode();
+platformBrowserDynamic()
+  .bootstrapModule(DotioModule)
+  .catch(err => {
+    console.error('¯\\_(ツ)_/¯');
+    console.error(err);
+  })
+  .finally(() => {
+    console.log('contact me if you read this.');
+  });
