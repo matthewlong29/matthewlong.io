@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+$primary: #00293c;
+$secondary: #1e656d;
+$accent: #f62a00;
+$text: #f1f3c3;
+
+@font-face {
+  font-family: 'caveat brush';
+  src: url('../../assets/fonts/CaveatBrush-Regular.ttf') format('truetype');
+};
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $primary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+a:visited,
+a:active,
+ul,
+li,
+span {
+  color: $text;
+  font-family: 'caveat brush', 'Open Sans', sans-serif;
+}
+
+p,
+a,
+a:visited,
+a:active,
+ul,
+li,
+span {
+  font-family: 'Open Sans', sans-serif;
+}

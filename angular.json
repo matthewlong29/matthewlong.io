@@ -37,6 +37,7 @@
             "tsConfig": "tsconfig.json",
             "aot": true,
             "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/app/dotio/dotio-theme.scss"],
             "scripts": []
           },
           "configurations": {
