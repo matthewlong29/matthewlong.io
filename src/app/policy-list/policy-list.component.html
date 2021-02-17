@@ -1,0 +1,60 @@
+<form [formGroup]="policyForm" (ngSubmit)="create()">
+  <div>
+    <label for="policyNumber">Policy Number:</label>
+    <input formControlName="policyNumberControl" name="policyNumber" placeholder="Enter Policy Number">
+  </div>
+  <div>
+    <label for="creationDate">Creation Date:</label>
+    <input formControlName="creationDateControl" name="creationDate" placeholder="Enter Creation Date">
+  </div>
+  <div>
+    <label for="effectiveDate">Effective Date:</label>
+    <input formControlName="effectiveDateControl" name="effectiveDate" placeholder="Enter Effective Date">
+  </div>
+  <div>
+    <label for="expireDate">Expire Date:</label>
+    <input formControlName="expireDateControl" name="expireDate" placeholder="Enter Expire Date">
+  </div>
+  <div>
+    <label for="paymentOption">Payment Option:</label>
+    <input formControlName="paymentOptionControl" name="paymentOption" placeholder="Enter Payment Option">
+  </div>
+  <div>
+    <label for="policyAmount">Policy Amount:</label>
+    <input formControlName="policyAmountControl" name="policyAmount" placeholder="Enter Policy Amount">
+  </div>
+  <div>
+    <label for="extraInfo">Extra Info:</label>
+    <input formControlName="extraInfoControl" name="extraInfo" placeholder="Enter Extra Info">
+  </div>
+  <input type="submit" value="Submit">
+</form>
+
+
+<table>
+  <thead>
+    <th>id</th>
+    <th>policyNumber</th>
+    <th>creationDate</th>
+    <th>effectiveDate</th>
+    <th>expireDate</th>
+    <th>paymentOption</th>
+    <th>policyAmount</th>
+    <th>extraInfo</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let policy of policies">
+      <td>{{policy.id}}</td>
+      <td>{{policy.policyNumber}}</td>
+      <td>{{policy.creationDate}}</td>
+      <td>{{policy.effectiveDate}}</td>
+      <td>{{policy.expireDate}}</td>
+      <td>{{policy.paymentOption}}</td>
+      <td>{{policy.policyAmount}}</td>
+      <td>{{policy.extraInfo}}</td>
+      <td>
+        <button (click)="delete(policy.id)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
