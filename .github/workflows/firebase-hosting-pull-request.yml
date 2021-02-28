@@ -12,7 +12,7 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_FUZZY_GUACAMOLE }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_MATTHEW_LONG_DOT_IO }}'
           projectId: fuzzy-guacamole
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels
