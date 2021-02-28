@@ -15,10 +15,11 @@ body {
   padding: 0;
   background-color: $primary;
   min-width: 100vw;
-  min-height: 100vh;
   max-width: 100vw;
-  max-height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
+  height: 5000px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -58,4 +59,24 @@ td {
 
 label {
   color: $text;
+}
+
+/*********************************************************************************************************
+scrollbar styles
+*********************************************************************************************************/
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: lighten($color: $secondary, $amount: 25);
+}
+
+::-webkit-scrollbar-thumb {
+  background: $secondary;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: darken($color: $secondary, $amount: 25);
 }

@@ -10,5 +10,5 @@ platformBrowserDynamic()
     console.error(err);
   })
   .finally(() => {
-    console.log('contact me if you read this.');
+    console.log('(⊙_⊙)');
   });

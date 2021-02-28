@@ -7,11 +7,13 @@ import { environment } from 'src/environments/environment';
 import { DotioRoutingModule } from './dotio-routing.module';
 import { DotioComponent } from './dotio.component';
 import { BannerComponent } from './banner/banner.component';
+import { BackgroundComponent } from './background/background.component';
 
 @NgModule({
   declarations: [
     DotioComponent,
-    BannerComponent
+    BannerComponent,
+    BackgroundComponent
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebaseConfig),
