@@ -6,10 +6,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { environment } from 'src/environments/environment';
 import { DotioRoutingModule } from './dotio-routing.module';
 import { DotioComponent } from './dotio.component';
+import { BannerComponent } from './banner/banner.component';
 
 @NgModule({
   declarations: [
-    DotioComponent
+    DotioComponent,
+    BannerComponent
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebaseConfig),

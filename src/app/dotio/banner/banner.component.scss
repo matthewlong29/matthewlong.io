@@ -1,0 +1,26 @@
+@import "../dotio-theme.scss";
+
+main {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary;
+  user-select: none;
+  h1 {
+    margin: 0;
+    background-image: url("../../../assets/banner.png");
+    background-size: cover;
+    height: 600px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    text-shadow: 0px 0px 2px $primary;
+    color: $text;
+  }
+}

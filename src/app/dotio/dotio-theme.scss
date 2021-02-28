@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-$primary: #00293c;
-$secondary: #1e656d;
-$accent: #f62a00;
-$text: #f1f3c3;
+$primary: #1c3740;
+$secondary: #4f95cf;
+$accent: #d69ab4;
+$text: #f6f7f1;
 
 @font-face {
   font-family: 'caveat brush';
@@ -14,6 +14,11 @@ body {
   margin: 0;
   padding: 0;
   background-color: $primary;
+  min-width: 100vw;
+  min-height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
 }
 
 h1,
