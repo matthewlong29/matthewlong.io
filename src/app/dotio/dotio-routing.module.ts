@@ -4,8 +4,12 @@ import { DotioComponent } from './dotio.component';
 
 const routes: Routes = [
   {
-    path: '**',
+    path: '',
     component: DotioComponent
+  },
+  {
+    path: '**',
+    redirectTo: '/'
   }
 ];
 
