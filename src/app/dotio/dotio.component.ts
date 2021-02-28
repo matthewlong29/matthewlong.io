@@ -5,9 +5,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'matthew-long-dot-io',
   styleUrls: ['./dotio.component.scss'],
   template: `<main>
-               <dotio-navigation></dotio-navigation>
-               <dotio-center></dotio-center>
-               <dotio-footer></dotio-footer>
+               <h1>Matthew Long</h1>
              </main>`
 })
 export class DotioComponent implements OnInit {
