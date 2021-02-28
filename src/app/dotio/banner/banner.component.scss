@@ -16,7 +16,7 @@ main {
 
   section {
     background-image: url("../../../assets/banner.png");
-    background-size: $bannerImageHeight;
+    background-size: 110vw;
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
@@ -26,13 +26,33 @@ main {
     justify-content: space-between;
     align-items: center;
 
-    h1 {
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: $bannerImageHeight;
+      min-width: 400px;
+      box-shadow: 0 0 0 300vh $primary;
+      border-radius: 150px;
+      z-index: 0;
+    }
+
+    h1,
+    p {
       margin: 0;
       text-shadow: 0px 0px 2px $primary;
       text-align: center;
       color: $text;
+      z-index: 1;
+    }
+
+    h1 {
       font-size: 4rem;
-      margin-bottom: $bannerImageHeight;
+    }
+
+    p {
+      font-size: 2rem;
     }
   }
 }

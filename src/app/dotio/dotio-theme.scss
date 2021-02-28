@@ -60,3 +60,23 @@ td {
 label {
   color: $text;
 }
+
+/*********************************************************************************************************
+scrollbar styles
+*********************************************************************************************************/
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: lighten($color: $secondary, $amount: 25);
+}
+
+::-webkit-scrollbar-thumb {
+  background: $secondary;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: darken($color: $secondary, $amount: 25);
+}

@@ -6,19 +6,19 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrls: ['./banner.component.scss']
 })
 export class BannerComponent implements OnInit {
-  public scrolledHeight: number;
+  public glassWindowWidth: string;
+  public glassWindowHeight: string;
 
   constructor() { }
 
   ngOnInit(): void {
-    this.scrolledHeight = document.documentElement.scrollTop;
-
+    this.glassWindowWidth = `${document.documentElement.scrollTop + 400}px`;
+    this.glassWindowHeight = `${document.documentElement.scrollTop + 600}px`;
   }
 
   @HostListener('window:scroll')
   public onScrollCalculateExpansion(): void {
-    this.scrolledHeight = document.documentElement.scrollTop;
-    console.log(this.scrolledHeight);
+    this.glassWindowWidth = `${document.documentElement.scrollTop * 2 + 400}px`;
+    this.glassWindowHeight = `${document.documentElement.scrollTop * 2 + 600}px`;
   }
-
 }
