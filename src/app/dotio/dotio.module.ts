@@ -8,12 +8,18 @@ import { DotioRoutingModule } from './dotio-routing.module';
 import { DotioComponent } from './dotio.component';
 import { BannerComponent } from './banner/banner.component';
 import { BackgroundComponent } from './background/background.component';
+import { ParallaxDirective } from './directives/parallax.directive';
+import { ContentComponent } from './content/content.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     DotioComponent,
     BannerComponent,
-    BackgroundComponent
+    BackgroundComponent,
+    ParallaxDirective,
+    ContentComponent,
+    FooterComponent
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebaseConfig),
