@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  // tslint:disable-next-line: component-selector
   selector: 'matthew-long-dot-io',
-  styleUrls: ['./dotio.component.scss'],
-  template: `<dotio-banner></dotio-banner>`
+  template: `
+    <dotio-banner></dotio-banner>
+    <dotio-background></dotio-background>
+    <dotio-content></dotio-content>
+    <dotio-footer></dotio-footer>
+  `
 })
 export class DotioComponent implements OnInit {
   constructor() { }

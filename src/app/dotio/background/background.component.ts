@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-background',
+  selector: 'dotio-background',
   templateUrl: './background.component.html',
   styleUrls: ['./background.component.scss']
 })
