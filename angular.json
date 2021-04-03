@@ -25,7 +25,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "dotio",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -36,8 +36,8 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.json",
             "aot": true,
-            "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/app/dotio/dotio-theme.scss"],
+            "assets": ["src/favicon.ico", "src/assets", "src/assets/icons"],
+            "styles": ["src/app/dotio-theme.scss"],
             "scripts": []
           },
           "configurations": {

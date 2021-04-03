@@ -1,0 +1,15 @@
+@import '../../dotio-theme.scss';
+
+header {
+  // border-bottom: 4px solid $accent;
+}
+
+h1 {
+  padding: 4rem;
+  text-align: center;
+  font-size: 4rem;
+
+  span {
+    color: $accent;
+  }
+}

@@ -1,25 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-$primary: #1c3740;
-$secondary: #4f95cf;
-$accent: #d69ab4;
+$primary: #222831;
+$secondary: #393e46;
+$accent: #b6eb7a;
 $text: #f6f7f1;
 
 @font-face {
   font-family: 'caveat brush';
-  src: url('../../assets/fonts/CaveatBrush-Regular.ttf') format('truetype');
+  src: url('../assets/fonts/CaveatBrush-Regular.ttf') format('truetype');
 };
 
 body {
   margin: 0;
   padding: 0;
-  background-color: $accent;
+  background-color: $primary;
   min-width: 100vw;
   max-width: 100vw;
   min-height: 100vh;
-  height: 100000px;
+  max-height: 100vh;
   overflow-x: hidden;
-  scroll-behavior: smooth;
+  overflow-y: hidden;
+  scroll-behavior: unset;
   z-index: 1;
 }
 
@@ -37,18 +38,8 @@ ul,
 li,
 span {
   color: $text;
-  font-family: 'caveat brush', 'Open Sans', sans-serif;
-  margin: 0;
-}
-
-p,
-a,
-a:visited,
-a:active,
-ul,
-li,
-span {
   font-family: 'Open Sans', sans-serif;
+  margin: 0;
 }
 
 table,
@@ -81,4 +72,12 @@ scrollbar styles
 
 ::-webkit-scrollbar-thumb:hover {
   background: darken($color: $secondary, $amount: 25);
+}
+
+/*********************************************************************************************************
+scrollbar styles
+*********************************************************************************************************/
+
+::selection {
+  background: $accent;
 }

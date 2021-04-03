@@ -1,6 +1,6 @@
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { DotioModule } from './app/dotio/dotio.module';
+import { DotioModule } from './app/dotio.module';
 
 enableProdMode();
 platformBrowserDynamic()

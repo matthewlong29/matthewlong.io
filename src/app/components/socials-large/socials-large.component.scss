@@ -1,0 +1,31 @@
+@import '../../dotio-theme.scss';
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  a {
+    margin: 4rem;
+    padding: 1rem;
+    border: 4px solid $accent;
+    border-radius: 4px;
+    min-height: 8rem;
+    min-width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 12px -1px black;
+    transition: box-shadow 80ms ease-out;
+    background-color: $secondary;
+
+    img {
+      height: 4rem;
+      filter: brightness(0%);
+    }
+
+    &:hover {
+      box-shadow: 1px 1px 12px -4px black;  
+    }
+  }
+}

@@ -2,12 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'matthew-long-dot-io',
-  template: `
-    <dotio-banner></dotio-banner>
-    <dotio-background></dotio-background>
-    <dotio-content></dotio-content>
-    <dotio-footer></dotio-footer>
-  `
+  template: `<dotio-layout></dotio-layout>`
 })
 export class DotioComponent implements OnInit {
   constructor() { }
