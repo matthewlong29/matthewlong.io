@@ -3,23 +3,25 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { environment } from 'src/environments/environment';
+import { environment } from '../environments/environment';
+import { SocialsLargeComponent } from './components/socials-large/socials-large.component';
+import { SocialsSmallComponent } from './components/socials-small/socials-small.component';
 import { DotioRoutingModule } from './dotio-routing.module';
 import { DotioComponent } from './dotio.component';
-import { BannerComponent } from './banner/banner.component';
-import { BackgroundComponent } from './background/background.component';
-import { ParallaxDirective } from './directives/parallax.directive';
-import { ContentComponent } from './content/content.component';
-import { FooterComponent } from './footer/footer.component';
+import { BannerComponent } from './layout/banner/banner.component';
+import { ContentComponent } from './layout/content/content.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
   declarations: [
     DotioComponent,
     BannerComponent,
-    BackgroundComponent,
-    ParallaxDirective,
     ContentComponent,
-    FooterComponent
+    FooterComponent,
+    LayoutComponent,
+    SocialsLargeComponent,
+    SocialsSmallComponent
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebaseConfig),
